@@ -1,0 +1,16 @@
+<RCC>
+    <qresource prefix="/title">
+        <file>icon/title.PNG</file>
+    </qresource>
+    <qresource prefix="/button">
+        <file>icon/save.png</file>
+        <file>icon/start.png</file>
+        <file>icon/exit.png</file>
+        <file>icon/browse.png</file>
+        <file>icon/updater.png</file>
+        <file>icon/back.png</file>
+        <file>icon/developer.png</file>
+        <file>icon/help.png</file>
+        <file>icon/info.png</file>
+    </qresource>
+</RCC>

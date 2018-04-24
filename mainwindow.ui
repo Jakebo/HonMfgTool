@@ -1,0 +1,858 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1225</width>
+    <height>741</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QWidget" name="developer_widget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>90</y>
+      <width>851</width>
+      <height>601</height>
+     </rect>
+    </property>
+    <widget class="QGroupBox" name="groupBox_3">
+     <property name="geometry">
+      <rect>
+       <x>1</x>
+       <y>470</y>
+       <width>751</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Optional</string>
+     </property>
+     <widget class="QCheckBox" name="autoreboot_cb">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>30</y>
+        <width>101</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Auto Reboot</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="groupBox_2">
+     <property name="geometry">
+      <rect>
+       <x>1</x>
+       <y>280</y>
+       <width>851</width>
+       <height>161</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>MP Files</string>
+     </property>
+     <widget class="QLineEdit" name="mp_folder_le">
+      <property name="geometry">
+       <rect>
+        <x>73</x>
+        <y>24</y>
+        <width>671</width>
+        <height>22</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="mp_folder_btn">
+      <property name="geometry">
+       <rect>
+        <x>757</x>
+        <y>21</y>
+        <width>93</width>
+        <height>29</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Browse</string>
+      </property>
+      <property name="icon">
+       <iconset resource="resource.qrc">
+        <normaloff>:/button/icon/browse.png</normaloff>:/button/icon/browse.png</iconset>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_10">
+      <property name="geometry">
+       <rect>
+        <x>21</x>
+        <y>30</y>
+        <width>45</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Folder: </string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_12">
+      <property name="geometry">
+       <rect>
+        <x>337</x>
+        <y>58</y>
+        <width>16</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QWidget" name="layoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>74</x>
+        <y>58</y>
+        <width>671</width>
+        <height>91</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_2">
+       <item row="1" column="1">
+        <widget class="QLineEdit" name="rpm_le">
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="3">
+        <widget class="QCheckBox" name="sbl1_cb">
+         <property name="text">
+          <string>Sbl1      </string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <widget class="QCheckBox" name="mp_select_all_cb">
+         <property name="text">
+          <string>Select All</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QCheckBox" name="rpm_cb">
+         <property name="text">
+          <string>Rpm</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0">
+        <widget class="QCheckBox" name="modem_cb">
+         <property name="text">
+          <string>NON-HLOS      </string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLineEdit" name="hlos_le">
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="4">
+        <widget class="QLineEdit" name="sbl1_le">
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="2">
+        <widget class="QLabel" name="label_7">
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="3">
+        <widget class="QCheckBox" name="tz_cb">
+         <property name="text">
+          <string>Tz</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="4">
+        <widget class="QLineEdit" name="tz_le">
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="groupBox">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>19</y>
+       <width>852</width>
+       <height>231</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>AP Files</string>
+     </property>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>21</x>
+        <y>30</y>
+        <width>45</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Folder: </string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="ap_folder_le">
+      <property name="geometry">
+       <rect>
+        <x>73</x>
+        <y>24</y>
+        <width>671</width>
+        <height>22</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="ap_folder_btn">
+      <property name="geometry">
+       <rect>
+        <x>757</x>
+        <y>21</y>
+        <width>93</width>
+        <height>29</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>Browse</string>
+      </property>
+      <property name="icon">
+       <iconset resource="resource.qrc">
+        <normaloff>:/button/icon/browse.png</normaloff>:/button/icon/browse.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>20</width>
+        <height>20</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_11">
+      <property name="geometry">
+       <rect>
+        <x>343</x>
+        <y>58</y>
+        <width>16</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QWidget" name="layoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>74</x>
+        <y>58</y>
+        <width>671</width>
+        <height>167</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="0" column="0">
+        <widget class="QCheckBox" name="boot_cb">
+         <property name="autoFillBackground">
+          <bool>false</bool>
+         </property>
+         <property name="text">
+          <string>Boot</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QLineEdit" name="cache_le">
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="0">
+        <widget class="QCheckBox" name="appsboot_cb">
+         <property name="text">
+          <string>eMMC appsboot</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="1">
+        <widget class="QLineEdit" name="appsboot_le">
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <widget class="QCheckBox" name="ipsm_cb">
+         <property name="text">
+          <string>IPSM</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="3">
+        <widget class="QCheckBox" name="splash_cb">
+         <property name="text">
+          <string>Splash</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="4">
+        <widget class="QLineEdit" name="persist_le">
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QCheckBox" name="cache_cb">
+         <property name="text">
+          <string>Cache</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QCheckBox" name="system_cb">
+         <property name="text">
+          <string>System</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="3">
+        <widget class="QCheckBox" name="persist_cb">
+         <property name="text">
+          <string>Persist</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="3">
+        <widget class="QCheckBox" name="recovery_cb">
+         <property name="text">
+          <string>Recovery</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="4">
+        <widget class="QLineEdit" name="recovery_le">
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QLineEdit" name="system_le">
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLineEdit" name="boot_le">
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1">
+        <widget class="QLineEdit" name="ipsm_le">
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="4">
+        <widget class="QLineEdit" name="splash_le">
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="3">
+        <widget class="QCheckBox" name="userdata_cb">
+         <property name="text">
+          <string>Userdata</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="4">
+        <widget class="QLineEdit" name="userdata_le">
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="0">
+        <widget class="QCheckBox" name="ap_selectall_cb">
+         <property name="text">
+          <string>Select All</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="2">
+        <widget class="QLabel" name="label_6">
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="Line" name="line_3">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>550</y>
+       <width>852</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="Line" name="line_4">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>852</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="Line" name="line">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>260</y>
+       <width>852</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="start_btn">
+     <property name="geometry">
+      <rect>
+       <x>650</x>
+       <y>570</y>
+       <width>93</width>
+       <height>29</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Start</string>
+     </property>
+     <property name="icon">
+      <iconset resource="resource.qrc">
+       <normaloff>:/button/icon/start.png</normaloff>:/button/icon/start.png</iconset>
+     </property>
+    </widget>
+    <widget class="Line" name="line_2">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>450</y>
+       <width>852</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="onekeymode_btn">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>570</y>
+       <width>121</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Onekey Mode</string>
+     </property>
+     <property name="icon">
+      <iconset resource="resource.qrc">
+       <normaloff>:/button/icon/back.png</normaloff>:/button/icon/back.png</iconset>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="status_lab">
+    <property name="geometry">
+     <rect>
+      <x>1140</x>
+      <y>570</y>
+      <width>73</width>
+      <height>73</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>73</width>
+      <height>73</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>73</width>
+      <height>73</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="autoFillBackground">
+     <bool>true</bool>
+    </property>
+    <property name="text">
+     <string> Waiting</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="onekey_widget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>90</y>
+      <width>851</width>
+      <height>601</height>
+     </rect>
+    </property>
+    <widget class="QPushButton" name="onekey_btn">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>170</y>
+       <width>391</width>
+       <height>281</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>13</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>      Click to
+OneKey Upgrade</string>
+     </property>
+     <property name="icon">
+      <iconset resource="resource.qrc">
+       <normaloff>:/button/icon/updater.png</normaloff>:/button/icon/updater.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>150</width>
+       <height>150</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="develop_btn">
+     <property name="geometry">
+      <rect>
+       <x>620</x>
+       <y>570</y>
+       <width>131</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Developer Mode</string>
+     </property>
+     <property name="icon">
+      <iconset resource="resource.qrc">
+       <normaloff>:/button/icon/developer.png</normaloff>:/button/icon/developer.png</iconset>
+     </property>
+    </widget>
+    <widget class="Line" name="line_5">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>851</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="Line" name="line_6">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>550</y>
+       <width>851</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QWidget" name="layoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>60</y>
+       <width>701</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QLabel" name="label_2">
+        <property name="text">
+         <string>AP Folder: </string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="onekey_apfolder_le"/>
+      </item>
+      <item>
+       <widget class="QPushButton" name="onekey_ap_browse_btn">
+        <property name="text">
+         <string>Browse</string>
+        </property>
+        <property name="icon">
+         <iconset resource="resource.qrc">
+          <normaloff>:/button/icon/browse.png</normaloff>:/button/icon/browse.png</iconset>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_8">
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_4">
+        <property name="text">
+         <string>MP Folder: </string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="onekey_mpfolder_le"/>
+      </item>
+      <item>
+       <widget class="QPushButton" name="onekey_mp_browse_btn">
+        <property name="text">
+         <string>Browse</string>
+        </property>
+        <property name="icon">
+         <iconset resource="resource.qrc">
+          <normaloff>:/button/icon/browse.png</normaloff>:/button/icon/browse.png</iconset>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="exit_btn">
+    <property name="geometry">
+     <rect>
+      <x>1130</x>
+      <y>660</y>
+      <width>93</width>
+      <height>29</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Exit</string>
+    </property>
+    <property name="icon">
+     <iconset resource="resource.qrc">
+      <normaloff>:/button/icon/exit.png</normaloff>:/button/icon/exit.png</iconset>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>11</x>
+      <y>11</y>
+      <width>1206</width>
+      <height>75</height>
+     </rect>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>1206</width>
+      <height>16777215</height>
+     </size>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="resource.qrc">:/title/icon/title.PNG</pixmap>
+    </property>
+   </widget>
+   <widget class="QTextBrowser" name="log_tb">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>150</y>
+      <width>350</width>
+      <height>501</height>
+     </rect>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>350</width>
+      <height>16777215</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>11</x>
+      <y>103</y>
+      <width>56</width>
+      <height>47</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe Print</family>
+      <pointsize>16</pointsize>
+      <weight>75</weight>
+      <italic>false</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Log:</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="save_log_btn">
+    <property name="geometry">
+     <rect>
+      <x>12</x>
+      <y>660</y>
+      <width>351</width>
+      <height>29</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Save log as</string>
+    </property>
+    <property name="icon">
+     <iconset resource="resource.qrc">
+      <normaloff>:/button/icon/save.png</normaloff>:/button/icon/save.png</iconset>
+    </property>
+   </widget>
+   <widget class="QProgressBar" name="progressBar">
+    <property name="geometry">
+     <rect>
+      <x>500</x>
+      <y>660</y>
+      <width>481</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>0</width>
+      <height>28</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QProgressBar {
+   text-align: center;
+}</string>
+    </property>
+    <property name="value">
+     <number>24</number>
+    </property>
+    <property name="textDirection">
+     <enum>QProgressBar::BottomToTop</enum>
+    </property>
+    <property name="format">
+     <string>%p%</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1225</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>Help</string>
+    </property>
+    <addaction name="actionUser_Guid"/>
+   </widget>
+   <addaction name="menuHelp"/>
+  </widget>
+  <action name="actionUser_Guid">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/button/icon/info.png</normaloff>:/button/icon/info.png</iconset>
+   </property>
+   <property name="text">
+    <string>User Guide</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="resource.qrc"/>
+ </resources>
+ <connections/>
+</ui>
